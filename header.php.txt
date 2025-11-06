@@ -1,0 +1,9 @@
+<HEAD>
+<TITLE>The Descendants of Johann Adam Dietel of 19th Century Somerset County, Pennsylvania</TITLE>
+<META NAME="DESCRIPTION" CONTENT="This website covers historical and genealogical topics of interest to me that pertain to Somerset County, Pennsylvania, and the surrounding region.">
+<META NAME="KEYWORDS" CONTENT="Somerset, Dietle, Pennsylvania">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<META http-equiv=Pragma content=no-cache>
+<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="English">
+<link rel="icon" type="image/x-icon" href="https://dietle.org/favicon.ico">
+</HEAD>
