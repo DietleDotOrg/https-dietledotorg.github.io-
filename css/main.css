@@ -19,11 +19,11 @@ h1.explore.hero-heading {
 }
 
 h1#heading-1 {
-  color: #13274a;
+  color: #070707;
 }
 
 h1 span.heading-text-1 {
-  color: #13274a;
+  color: #070707;
 }
 
 h2.section-title {
@@ -154,7 +154,7 @@ h6.student-name {
 h6.contact-minititle {
   margin-top: 0;
   margin-bottom: 16px;
-  color: #13274a;
+  color: #070707;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
@@ -165,7 +165,7 @@ h6.contact-minititle {
 h6.form-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #13274a;
+  color: #070707;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
@@ -433,7 +433,7 @@ input[type=email].email-input-full {
   width: auto;
   border-width: 0;
   border-radius: 0;
-  background-color: #13274a;
+  background-color: #070707;
 }
 
 input[type=email].email-1 {
@@ -457,7 +457,7 @@ textarea.textarea-1 {
   min-height: 300px;
   border-color: rgba(144, 144, 144, .29);
   background-color: #f8f8f8;
-  color: #13274a;
+  color: #070707;
   font-size: 20px;
   font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -2025,7 +2025,7 @@ button.button-1:hover {
     padding-top: 0;
     padding-bottom: 0;
     width: 100%;
-    background-color: #13274a;
+    background-color: #070707;
     opacity: 0;
     -webkit-transition-duration: .3s;
        -moz-transition-duration: .3s;
@@ -2266,6 +2266,7 @@ button.button-1:hover {
   }
 
 }
+
 
 
 
