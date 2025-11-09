@@ -1093,7 +1093,7 @@ label.label.form-label {
   -ms-flex-pack: center;
   -ms-flex-align: center;
   padding: 120px 24px;
-  min-height: 70vh;
+  min-height: 80vh;
   background-color: #f8f8f8;
 
   -webkit-box-align: center;
@@ -1460,7 +1460,7 @@ label.label.form-label {
   -ms-flex-pack: center;
   -ms-flex-align: center;
   padding: 48px 24px;
-  min-height: 70vh;
+  min-height: 80vh;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
 
@@ -2266,6 +2266,7 @@ button.button-1:hover {
   }
 
 }
+
 
 
 
