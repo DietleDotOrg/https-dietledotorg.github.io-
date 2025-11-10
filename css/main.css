@@ -2404,41 +2404,64 @@ button.button-1:hover {
 
 
 
-/* Updated CSS for Centering, Spacing, and Width Matching */
+/* --- Column Centering and Spacing FIX --- */
 
+/* 1. Set the overall width and center the entire group of columns */
 .column-wrapper {
-  display: flex;
-  justify-content: center; /* Center the row horizontally */
+  /* Match the main text width */
+  max-width: 800px;
+  width: 100%;
+  
+  /* Centering the block */
   margin-right: auto;
   margin-left: auto;
-  /* Set max-width to match the text content area (800px) */
-  max-width: 800px; 
-  width: 100%; /* Ensure it uses the full width up to the max-width */
+  
+  /* Ensure it is treated as a block for centering */
+  display: block !important; 
 }
 
-/* Set up the row for flexible spacing */
+/* 2. Style the row container */
 .row {
-  display: flex;
-  justify-content: space-between; /* Creates space between the columns */
-  width: 100%; /* Ensure the row uses the full width of the wrapper (800px) */
-  box-sizing: border-box; /* Include padding/border in the element's total width */
+  display: flex !important; /* Forces flexbox layout, overriding any float/grid defaults */
+  flex-direction: row;
+  justify-content: space-between; /* Distributes space between columns */
+  
+  /* Use gap for consistent spacing between columns */
+  gap: 20px; /* Adjust this value to make columns 'farther apart' (e.g., 10px, 30px, etc.) */
+  
+  /* Remove potential negative margins/padding from the theme */
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Define column width and spacing */
+/* 3. Style the individual columns */
 .column {
-  /* 30% width for the content + 3.33% margin on each side = ~33.33% per column */
-  flex: 0 0 30%; 
-  margin: 0 1.66%; /* This margin creates the space between the columns */
+  /* Calculate the width: 
+     (100% - total_gap_space) / 3 
+     With gap: 20px * 2 spaces = 40px gap total.
+     Flex-basis handles the width when using gap.
+  */
+  flex-basis: calc((100% - 40px) / 3); /* 40px is for 2 gaps (20px each) */
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  /* Important: Remove any pre-existing padding/margin that interferes with flexbox */
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  /* Center text/content inside the column */
   text-align: center; 
 }
 
-/* Add or maintain media query for responsiveness */
+
+/* Responsive adjustment for small screens */
 @media (max-width: 768px) {
     .row {
-        flex-direction: column;
+        flex-direction: column !important; /* Stack columns vertically on mobile */
+        gap: 0;
     }
     .column {
-        flex: 0 0 100%; 
-        margin: 0 0 20px 0; /* Updated margins for stacking */
+        flex-basis: 100%; /* Columns take up full width */
+        margin-bottom: 20px !important; /* Add vertical space when stacked */
     }
 }
