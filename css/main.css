@@ -2308,6 +2308,7 @@ button.button-1:hover {
   float: left;
   width: 33.33%;
   max-width: 800px;
+  column-gap: 25px;
 }
 
 /* Clear floats after the columns */
@@ -2324,6 +2325,7 @@ button.button-1:hover {
     
   }
 }
+
 
 
 
