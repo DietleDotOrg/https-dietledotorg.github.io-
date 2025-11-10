@@ -33,7 +33,7 @@ h2.section-title {
   max-width: 800px;
   color: #000000;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 2px;
   font-weight: 500;
   font-size: 70px;
@@ -2302,6 +2302,7 @@ button.button-1:hover {
   }
 
 }
+
 
 
 
