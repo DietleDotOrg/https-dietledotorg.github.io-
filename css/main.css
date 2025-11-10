@@ -9,7 +9,7 @@ h1.hero-heading {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 400;
-  font-size: 145px;
+  font-size: 85px;
   font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: .7;
 }
@@ -2302,6 +2302,7 @@ button.button-1:hover {
   }
 
 }
+
 
 
 
