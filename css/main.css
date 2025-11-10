@@ -1791,7 +1791,7 @@ a.glyph.mobile-nav-button {
 
 div.responsive-picture.logo-menu-mobile {
   display: none;
-  width: 80px;
+  width: 40px;
 }
 
 span.glyph.icon-footer {
@@ -2266,6 +2266,7 @@ button.button-1:hover {
   }
 
 }
+
 
 
 
