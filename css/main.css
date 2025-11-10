@@ -1743,7 +1743,7 @@ label.label.form-label {
   display:         flex;
   -ms-flex-pack: center;
   -ms-flex-align: center;
-  padding: 30px 30px;
+  padding: 80px 30px 30px 30px;
   min-height: 101vh;
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .7) 0%, rgba(0, 18, 1, .45) 100%), url('../images/1839-Pennsylvania-Map Large.png');
   background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, .7) 0%, rgba(0, 18, 1, .45) 100%), url('../images/1839-Pennsylvania-Map Large.png');
@@ -2266,6 +2266,7 @@ button.button-1:hover {
   }
 
 }
+
 
 
 
