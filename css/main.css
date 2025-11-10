@@ -2404,46 +2404,41 @@ button.button-1:hover {
 
 
 
+/* Updated CSS for Centering, Spacing, and Width Matching */
 
-/* Styling for Column Centering and Spacing */
-
-/* Centering the row (via the new wrapper) and controlling its max-width */
 .column-wrapper {
   display: flex;
   justify-content: center; /* Center the row horizontally */
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px; /* Adjust this value to control the maximum width of the columns group */
+  /* Set max-width to match the text content area (800px) */
+  max-width: 800px; 
+  width: 100%; /* Ensure it uses the full width up to the max-width */
 }
 
 /* Set up the row for flexible spacing */
 .row {
-  display: flex; /* Enable flexbox for the columns */
-  justify-content: space-between; /* Pushes the columns to the sides, creating space between them */
-  /* Remove width: 100% or similar if it exists and causes layout issues */
+  display: flex;
+  justify-content: space-between; /* Creates space between the columns */
+  width: 100%; /* Ensure the row uses the full width of the wrapper (800px) */
+  box-sizing: border-box; /* Include padding/border in the element's total width */
 }
 
-/* Define column width and spacing (margins create the 'farther apart' effect) */
+/* Define column width and spacing */
 .column {
-  /* Set a fixed percentage width for each column (e.g., 30%) */
-  flex: 0 0 30%; /* flex-grow: 0, flex-shrink: 0, flex-basis: 30% */
-  /* Add padding/margin for spacing */
-  padding: 0 10px; /* Add some horizontal padding inside the columns */
-  margin: 0 1.5%; /* This margin creates the space between the columns and from the wrapper edge */
-  text-align: center; /* Ensures content is centered within the column */
+  /* 30% width for the content + 3.33% margin on each side = ~33.33% per column */
+  flex: 0 0 30%; 
+  margin: 0 1.66%; /* This margin creates the space between the columns */
+  text-align: center; 
 }
 
-/* You may need to add media queries for smaller screens if this layout breaks */
-@media (max-width: 600px) {
+/* Add or maintain media query for responsiveness */
+@media (max-width: 768px) {
     .row {
-        flex-direction: column; /* Stacks columns vertically on smaller screens */
+        flex-direction: column;
     }
     .column {
-        flex: 0 0 100%; /* Columns take up full width on small screens */
-        margin-bottom: 25px; /* Add vertical space when stacked */
+        flex: 0 0 100%; 
+        margin: 0 0 20px 0; /* Updated margins for stacking */
     }
 }
-
-
-
-
