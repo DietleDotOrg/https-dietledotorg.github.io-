@@ -173,6 +173,24 @@ h6.form-title {
   font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+h7.tagline {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #909090;
+  text-transform: none;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 30px;
+  font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h7.tagline.white {
+  color: #f2f2f2;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
 p.paragraph#paragraph-3 {
   text-align: left;
 }
@@ -2329,3 +2347,4 @@ button.button-1:hover {
     margin-bottom: 25px; 
   }
 }
+
