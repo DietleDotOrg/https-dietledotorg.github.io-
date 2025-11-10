@@ -271,7 +271,7 @@ h4.column-titles {
   letter-spacing: 2px;
   line-height: 26px;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;  
 }
 
@@ -2491,6 +2491,7 @@ button.button-1:hover {
         margin-bottom: 20px !important; /* Add vertical space when stacked */
     }
 }
+
 
 
 
