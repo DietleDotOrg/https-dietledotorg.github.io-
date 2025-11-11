@@ -2568,6 +2568,29 @@ button.button-1:hover {
 }
 
 
+/* === FIX: Centering Columns in .cover-section-columns === */
+
+/* 1. Constrain the wrapper and center it on the page. 
+      This creates a container smaller than the screen width to center. */
+.cover-section-columns .column-wrapper {
+    max-width: 900px; /* Adjust this total width based on your desired look */
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* 2. Apply Flex centering to the row. */
+.cover-section-columns .row {
+    justify-content: center; /* Centers the group of columns horizontally */
+}
+
+/* 3. MOST IMPORTANT: Stop the columns from stretching to fill all available space. */
+.cover-section-columns .column {
+    flex-grow: 0;   /* Prevents the column from consuming extra space */
+    flex-basis: 250px; /* Provides a base size for each column */
+    max-width: 300px;
+    /* This setup ensures the three columns are a single, centered block. */
+}
 
 
 
